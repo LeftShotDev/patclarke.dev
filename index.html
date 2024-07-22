@@ -2,33 +2,32 @@
 <html lang="en">
 
 <head>
-  <title>Pat Clarke | Front End Performance Developer & Engineer</title>
   <meta charset="UTF-8">
+  <title>Pat Clarke | Director of Engineer in practice, Front-End Developer at heart</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal homepage of Pat Clarke, Durham N.C. based developer." />
+  <meta name="description" content="Personal homepage of Pat Clarke, Durham N.C. based developer and manager." />
   <style type="text/css">
-    html {
-      border-top: 10px solid #ff7a00
+    * {
+      box-sizing: border-box;
     }
 
     body {
       align-items: center;
-      background-color: #fff;
-      color: #1e1e1e;
-      display: flex;
-      flex-direction: column;
+      background-color: #333;
+      color: #fefefe;
+      display: grid;
+      gap: 5vw;
+      grid-template-columns: minmax(10vw, auto) 1fr;
+      grid-template-rows: auto auto;
       font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
       font-size: 22px;
-      justify-content: center;
       max-width: 600px;
-      padding: 4rem 40px 2rem;
-      margin: 0 auto
+      margin: 0;
     }
 
-    a:not(.nmcLink) {
+    a:not(.empLink) {
       border-bottom: 2px solid #fff;
       color: #6e00f4;
-      text-decoration: none;
       transition: .2s border-color, color cubic-bezier(.075, .82, .165, 1);
       -webkit-transition: .2s border-color, color cubic-bezier(.075, .82, .165, 1);
       -moz-transition: .2s border-color, color cubic-bezier(.075, .82, .165, 1);
@@ -36,17 +35,17 @@
       -o-transition: .2s border-color, color cubic-bezier(.075, .82, .165, 1)
     }
 
-    a:not(.nmcLink):focus,
-    a:not(.nmcLink):hover {
+    a:not(.empLink):focus,
+    a:not(.empLink):hover {
       border-color: #6e00f4;
       color: #1e1e1e
     }
 
-    .header {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center
+    header {
+      /* background-color: #FF4500; */
+      background-color: #ffe;
+      grid-row: 1 / -1;
+      height: 100vh;
     }
 
     .avatar {
@@ -82,9 +81,14 @@
     }
 
     h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      margin: 0 0 .5rem
+      color: #333;
+      font-size: 3rem;
+      font-weight: 900;
+      margin: 0 0 .5rem;
+      text-orientation: upright;
+      text-transform: uppercase;
+      writing-mode: vertical-lr;
+      text-align: center;
     }
 
     h2 {
@@ -97,7 +101,7 @@
       text-align: center
     }
 
-    .nmcLink {
+    .empLink {
       background-color: #ccc;
       color: #1e1e1e;
       display: inline-block;
@@ -111,8 +115,8 @@
       -o-transition: 250ms background-color, color cubic-bezier(.075, .82, .165, 1)
     }
 
-    .nmcLink:focus,
-    .nmcLink:hover {
+    .empLink:focus,
+    .empLink:hover {
       background-color: #1e75c2;
       color: #fff
     }
@@ -121,6 +125,22 @@
 
 <body>
   <header class="header">
+    <h1>Pat Clarke</h1>
+    <nav class="nav" aria-label="Social Profiles">
+      <ul class="nav_ul">
+        <li class="nav_li"><a class="nav_a" href="https://twitter.com/leftshotdev" target="_blank"
+            rel="noreferrer noopener">Twitter</a></li>
+        <li class="nav_li"><a class="nav_a" href="https://bsky.app/profile/patclarke.dev" target="_blank"
+            rel="noreferrer noopener">BlueSky</a></li>
+        <li class="nav_li"><a class="nav_a" href="https://codepen.io/leftshotdev" target="_blank"
+            rel="noreferrer noopener">CodePen</a></li>
+        <li class="nav_li"><a class="nav_a" href="https://github.com/leftshotdev" target="_blank"
+            rel="noreferrer noopener">GitHub</a></li>
+        <li class="nav_li"><a class="nav_email" rel="me" href="mailto:pat@96studios.com">pat@96studios.com</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
     <div class="avatar">
       <picture>
         <source type="image/webp" srcset="./images/pat-clarke.webp">
@@ -128,30 +148,11 @@
           height="150" />
       </picture>
     </div>
-    <h1>Pat Clarke</h1>
-    <h2>Director of Engineering at <a class="nmcLink" href="https://www.lumenlearning.com/" target="_blank"
-        rel="noreferrer noopener">Lumen Learning</a></h2>
-  </header>
-  <main>
-    <p>Getting acclimated work on product(s) for the first time in my career.</p>
-    <p>My interests have me learning JS frameworks, application development, and all thing JAMStack in my
-      <em>limited</em> downtime, thanks
-      to <a href="https://www.leveluptutorials.com/" target="_blank" rel="noreferrer noopener">LevelUpTutorials</a> and
-      their <a href="https://discord.gg/57Chdqt" target="_blank" rel="noreferrer noopener">Discord Community</a>.
-    </p>
+    <p>Pat Clarke currently works as a Director of Engineering at <a href="https://www.lumenlearning.com/"
+        target="_blank" rel="noreferrer noopener">Lumen Learning</a>, with a Front-End focus. Lumen is an EdTech
+      company committed to delivering affordable digital courseware to college students.</p>
   </main>
   <footer>
-    <nav class="nav">
-      <ul class="nav_ul">
-        <li class="nav_li"><a class="nav_a" href="https://twitter.com/leftshotdev" target="_blank"
-            rel="noreferrer noopener">Twitter</a></li>
-        <li class="nav_li"><a class="nav_a" href="https://codepen.io/leftshotdev" target="_blank"
-            rel="noreferrer noopener">CodePen</a></li>
-        <li class="nav_li"><a class="nav_a" href="https://github.com/leftshotdev" target="_blank"
-            rel="noreferrer noopener">GitHub</a></li>
-      </ul>
-      <a class="nav_email" rel="me" href="mailto:pat@96studios.com">pat@96studios.com</a>
-    </nav>
   </footer>
 </body>
 
