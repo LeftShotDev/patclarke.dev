@@ -9,8 +9,8 @@
   <style type="text/css">
     :root {
       --hdr-gradient: linear-gradient(to bottom right in oklab,
-          oklch(95% 0.50 290) 0%, oklch(72% .5 90) 100%);
-      --sdr-gradient: linear-gradient(to bottom right, #ff58ff 0%, #ff6500 100%);
+          oklch(72.3% 0.1896 50.54) 0%, oklch(95% 0.50 290) 100%);
+      --sdr-gradient: linear-gradient(to bottom right, #ff7a00 0%, #ff58ff 100%);
 
       background: var(--hdr-gradient);
     }
@@ -21,28 +21,31 @@
 
     html {
       padding: 1em;
-      height: 100vh;
     }
 
     body {
       align-items: center;
-      /* HEX equivilent for background: #f6f5f1 */
+      /* background-color: #f6f5f1 */
       background-color: oklch(96.98% 0.0054 95.1);
-      /* HEX equivilent for color: #353534 */
+      /* color:  #353534 */
       color: oklch(32.86% 0.0017 106.49);
       display: flex;
       flex-direction: column;
       font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
       font-size: 22px;
+      line-height: 1.4;
       justify-content: center;
       padding: 4rem 40px 2rem;
-      margin: 0 auto;
-      min-height: 98vh;
     }
 
-    a:not(.nmcLink) {
+    body>* {
+      max-width: 600px;
+    }
+
+    a:not(.lumenLink) {
       border-bottom: 2px solid #fff;
-      color: #6e00f4;
+      /* color: #6e00f4; */
+      color: oklch(49.99% 0.2833 289.75);
       text-decoration: none;
       transition: .2s border-color, color cubic-bezier(.075, .82, .165, 1);
       -webkit-transition: .2s border-color, color cubic-bezier(.075, .82, .165, 1);
@@ -51,10 +54,12 @@
       -o-transition: .2s border-color, color cubic-bezier(.075, .82, .165, 1)
     }
 
-    a:not(.nmcLink):focus,
-    a:not(.nmcLink):hover {
-      border-color: #6e00f4;
-      color: #1e1e1e
+    a:not(.lumenLink):focus,
+    a:not(.lumenLink):hover {
+      /* border-color: #6e00f4; */
+      border-color: oklch(49.99% 0.2833 289.75);
+      /* color: #1e1e1e; */
+      color: oklch(23.5% 0 0);
     }
 
     .header {
@@ -112,7 +117,7 @@
       text-align: center
     }
 
-    .nmcLink {
+    .lumenLink {
       background-color: #ccc;
       color: #1e1e1e;
       display: inline-block;
@@ -126,9 +131,10 @@
       -o-transition: 250ms background-color, color cubic-bezier(.075, .82, .165, 1)
     }
 
-    .nmcLink:focus,
-    .nmcLink:hover {
-      background-color: #1e75c2;
+    .lumenLink:focus,
+    .lumenLink:hover {
+      /* background-color: #15b976; */
+      background-color: oklch(69.39% 0.1579 158.19);
       color: #fff
     }
   </style>
@@ -137,24 +143,22 @@
 <body>
   <header class="header">
     <div class="avatar">
-      <picture>
-        <source type="image/webp" srcset="./images/pat-clarke.webp">
-        <img class="avatar_img" loading="lazy" src="./images/pat-clarke.png" alt="Pat's illustrated Avatar" width="150"
-          height="150" />
-      </picture>
+      <img class="avatar_img" loading="lazy" src="./images/pat-clarke.svg" alt="Pat's illustrated Avatar" width="150"
+        height="150" />
     </div>
     <h1>Pat Clarke</h1>
-    <h2>Director of Engineering at <a class="nmcLink" href="https://www.lumenlearning.com/" target="_blank"
+    <h2>Director of Engineering at <a class="lumenLink" href="https://www.lumenlearning.com/" target="_blank"
         rel="noreferrer noopener">Lumen Learning</a></h2>
   </header>
   <main>
     <p>I help the Front-End and QA teams at Lumen build low-cost courseware for general-education at
       colleges and universities in the <abbr title="United States">US</abbr>. We works on more than a dozen services,
-      covering multiple products. Each product deliever different courses to our customers.</p>
+      covering multiple products. Each product deliever different courses to our customers. I work remotely from Durham,
+      North Carolina.</p>
     <p>Prior to my time at Lumen, I spent 12 years with the awesome team at <a
         href="https://www.newmediacampaigns.com/">New Media Campaigns</a> (<abbr
         title="New Media Campaigns">NMC</abbr>). NMC is a design and development agency based in
-      Carrboro, <abbr title="North Carolina">N.C.</a>.</p>
+      Carrboro, North Carolina.</p>
     <p>To stay up-to-date on web developer, I'm a member of serveral Discord servers, including:</p>
     <ul>
       <li><a href="https://discord.gg/ZkF6NeAYfn" target="_blank" rel="noreferrer noopener">Syntax</a> - for fans of the
@@ -168,7 +172,6 @@
       <li><a href="https://discord.gg/faKTQYdz3J" target="_blank" rel="noreferrer noopener">Frontend Horse</a> - a
         creative community centered around Front-End development.</li>
     </ul>
-
   </main>
   <footer>
     <nav class="nav">
