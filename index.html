@@ -2,27 +2,42 @@
 <html lang="en">
 
 <head>
-  <title>Pat Clarke | Front End Performance Developer & Engineer</title>
+  <title>Pat Clarke | Engineering Leadership | Front-End Performance Web Developer | CSS Lover</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Personal homepage of Pat Clarke, Durham N.C. based developer." />
   <style type="text/css">
+    :root {
+      --hdr-gradient: linear-gradient(to bottom right in oklab,
+          oklch(95% 0.50 290) 0%, oklch(72% .5 90) 100%);
+      --sdr-gradient: linear-gradient(to bottom right, #ff58ff 0%, #ff6500 100%);
+
+      background: var(--hdr-gradient);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     html {
-      border-top: 10px solid #ff7a00
+      padding: 1em;
+      height: 100vh;
     }
 
     body {
       align-items: center;
-      background-color: #fff;
-      color: #1e1e1e;
+      /* HEX equivilent for background: #f6f5f1 */
+      background-color: oklch(96.98% 0.0054 95.1);
+      /* HEX equivilent for color: #353534 */
+      color: oklch(32.86% 0.0017 106.49);
       display: flex;
       flex-direction: column;
       font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
       font-size: 22px;
       justify-content: center;
-      max-width: 600px;
       padding: 4rem 40px 2rem;
-      margin: 0 auto
+      margin: 0 auto;
+      min-height: 98vh;
     }
 
     a:not(.nmcLink) {
@@ -133,22 +148,42 @@
         rel="noreferrer noopener">Lumen Learning</a></h2>
   </header>
   <main>
-    <p>Getting acclimated work on product(s) for the first time in my career.</p>
-    <p>My interests have me learning JS frameworks, application development, and all thing JAMStack in my
-      <em>limited</em> downtime, thanks
-      to <a href="https://www.leveluptutorials.com/" target="_blank" rel="noreferrer noopener">LevelUpTutorials</a> and
-      their <a href="https://discord.gg/57Chdqt" target="_blank" rel="noreferrer noopener">Discord Community</a>.
-    </p>
+    <p>I help the Front-End and QA teams at Lumen build low-cost courseware for general-education at
+      colleges and universities in the <abbr title="United States">US</abbr>. We works on more than a dozen services,
+      covering multiple products. Each product deliever different courses to our customers.</p>
+    <p>Prior to my time at Lumen, I spent 12 years with the awesome team at <a
+        href="https://www.newmediacampaigns.com/">New Media Campaigns</a> (<abbr
+        title="New Media Campaigns">NMC</abbr>). NMC is a design and development agency based in
+      Carrboro, <abbr title="North Carolina">N.C.</a>.</p>
+    <p>To stay up-to-date on web developer, I'm a member of serveral Discord servers, including:</p>
+    <ul>
+      <li><a href="https://discord.gg/ZkF6NeAYfn" target="_blank" rel="noreferrer noopener">Syntax</a> - for fans of the
+        Sytnax Podcast.</li>
+      <li><a href="https://discord.gg/tXgaWg4A4z" target="_blank" rel="noreferrer noopener">Triangle Developer</a> - for
+        local devs in the Research Triangle, NC region.</li>
+      <li><a href="https://discord.gg/aEPRbqdc3Y" target="_blank" rel="noreferrer noopener">Playful Programming</a> - an
+        educational a community of passionate engineers, developers, designers, hobbyists and more.</li>
+      <li><a href="https://discord.gg/ey4tdVDVky" target="_blank" rel="noreferrer noopener">Dads In Tech</a> - a group
+        exporling the interesction between being parents and working in the tech industry.</li>
+      <li><a href="https://discord.gg/faKTQYdz3J" target="_blank" rel="noreferrer noopener">Frontend Horse</a> - a
+        creative community centered around Front-End development.</li>
+    </ul>
+
   </main>
   <footer>
     <nav class="nav">
+      <h3>Where else you can find me online</h3>
       <ul class="nav_ul">
-        <li class="nav_li"><a class="nav_a" href="https://twitter.com/leftshotdev" target="_blank"
-            rel="noreferrer noopener">Twitter</a></li>
+        <li class="nav_li"><a class="nav_a" href="https://www.linkedin.com/in/pat-clarke-dev/" target=" _blank"
+            rel="noreferrer noopener">LinkedIn</a></li>
+        <li class="nav_li"><a class="nav_a" href="https://bsky.app/profile/patclarke.dev" target="_blank"
+            rel="noreferrer noopener">BlueSky</a></li>
         <li class="nav_li"><a class="nav_a" href="https://codepen.io/leftshotdev" target="_blank"
             rel="noreferrer noopener">CodePen</a></li>
         <li class="nav_li"><a class="nav_a" href="https://github.com/leftshotdev" target="_blank"
             rel="noreferrer noopener">GitHub</a></li>
+        <li class="nav_li"><a class="nav_a" href="https://twitter.com/leftshotdev" target="_blank"
+            rel="noreferrer noopener">Twitter</a></li>
       </ul>
       <a class="nav_email" rel="me" href="mailto:pat@96studios.com">pat@96studios.com</a>
     </nav>
